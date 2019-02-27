@@ -16,8 +16,8 @@
     </br>
     </br>
     <div ng-repeat="element in tab">
-        <input name="checkTask" type="checkbox" ng-checked="verifCheck()" />
-        <span ng-style="myStyle">{{element}}</span>
+        <input type="checkbox" ng-click="rayer($index)" />
+        <span id="ele" ng-style="{'text-decoration': (element.barre == true) ? 'line-through' : 'blink'}">{{element.valeur}}</span>
         <a href='' ng-click="supprimer($index)">X</a>
     </div>
 
@@ -28,8 +28,12 @@
         var todoApp = angular.module('todoApp', []);
         todoApp.controller('testCtrl', ['$scope', function($scope, tab) {
             $scope.tab = [];
+
             $scope.addTask = function() {
-                $scope.tab.push($scope.task);
+                var task = new Object()
+                task.barre = false;
+                task.valeur = $scope.task;
+                $scope.tab.push(task);
                 $scope.task = '';
             };
 
@@ -37,9 +41,10 @@
                 $scope.tab.splice($index, 1);
             };
 
-            $scope.verifCheck = function() {
-                $scope.myStyle = "'text-decoration':'line-through'";
+            $scope.rayer = function($index) {
+                $scope.tab[$index].barre = !$scope.tab[$index].barre;
             };
+
         }]);
     </script>
 
