@@ -5,7 +5,7 @@ Application TodoList avec connexion des utilisateurs.
 Pour visualiser les tâches, il faut cliquer sur un groupe de tâches.
 
 
-Lance ment en local : 
+Lancement en local : 
 
 	1) télécharger le répertoire
 
