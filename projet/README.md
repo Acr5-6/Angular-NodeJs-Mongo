@@ -13,4 +13,4 @@ Lancement en local :
 
 	2) lancer dans un terminal : npm install
 
-	3) lancer dans un terminal : nodemon app.js
+	3) puis : nodemon app.js
