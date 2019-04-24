@@ -2,7 +2,7 @@ Application Ionic TodoList avec connexion des utilisateurs.
 
 Lancement en local :
 
-1) télécharger le fichier .zip
+1) télécharger le fichier todoList-ionic.rar
 
 2) extraire les fichiers
 
