@@ -1,4 +1,4 @@
-# TodoAPI
+# TodoAPI (Web)
 
 Application TodoList avec connexion des utilisateurs.
 
